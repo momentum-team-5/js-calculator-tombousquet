@@ -1,27 +1,35 @@
-let str = ''
+let input = ''
+
+
+
 let buttonDiv = document.querySelector('.container')
 buttonDiv.addEventListener('click' , function (event) {
-    console.log('the box you clicked was ', event.target.id)
-let messageDiv = document.querySelector('.message')
-let messagePara = document.createElement('p')
-messagePara.classList.add('msg-p')
-messagePara.innerText = str += event.target.id
-messageDiv.appendChild(messagePara)
 
+if (event.target = '.number') {
+let displayDiv = document.querySelector('.message')
+let displayPara = document.createElement('p')
+displayPara.classList.add('.result')
+   input += event.target.id
+   displayDiv.appendChild(displayPara) 
+   displayPara.innerText = input
+   displayDiv.replaceChild()
+   console.log('so far we have ' + input)  
 
-if (event.target === '.number') {
-        innerText = (str += event.target.id)
-        console.log(str)
+  
+}
+if (event.target = '.operator') {
+    
     }
-if (event.target === '.operator') {
-        str += 'event.target.id'
-        console.log(str)
-} 
-if (event.target.id === '.equals') {
+if (event.target = '.decimal') {
+    
+    }
+if (event.target = 'clear') {
     
 }
+if (event.target ='.equals') {
+    
+    
+}
+}
 
-})  
-
-//display shows the button click (besides C/=,
-// adds to string in display, eval function) if clr str is set to 0.
+)
